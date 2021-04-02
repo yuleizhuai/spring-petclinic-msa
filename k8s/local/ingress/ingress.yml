@@ -10,11 +10,11 @@ spec:
     - host: petclinic.msa.local
       http:
         paths:
-           - path: /api/vet(/|$)(.*)
-             backend:
-               serviceName: vets
-               servicePort: 8080
-           - path: /api/customer(/|$)(.*)
-             backend:
-               serviceName: customers
-               servicePort: 8080
+          - path: /api/vet(/|$)(.*)
+            backend:
+              serviceName: vets
+              servicePort: 8080
+          - path: /api/customer(/|$)(.*)
+            backend:
+              serviceName: customers
+              servicePort: 8080
